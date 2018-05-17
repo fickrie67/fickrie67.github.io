@@ -322,6 +322,7 @@
   <div class="container">
     <div class="section-title center">
      
+	   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
 	 <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
     <style>
       .map {
@@ -347,8 +348,26 @@
           zoom: 14
         })
       });
-	  
-    </script>
+	 
+
+var marker = new ol.Feature({
+  geometry: new ol.geom.Point(
+    ol.proj.fromLonLat([106.739777,-6.296443])
+  ),  // Cordinates 
+});
+var vectorSource = new ol.source.Vector({
+  features: [marker]
+});
+var markerVectorLayer = new ol.layer.Vector({
+  source: vectorSource,
+});
+map.addLayer(markerVectorLayer);
+ 
+   
+	
+ </script>
+	
+	
 	<hr>
 	 <h2>Contact Us</h2>
       
