@@ -466,7 +466,7 @@ var observer = new MutationObserver(function(mutations) {
             var str = mutations[i].addedNodes[0].src.match(/[?&]callback=.*[&$]/g);
             if (str) {
                 if (str[0][str[0].length - 1] == '&') {
-                    str = str[0].substring(10, str[0].length - 1);
+                    str = str[0].substring(10, str[0].length - 1); 
                 } else {
                     str = str[0].substring(10);
                 }
