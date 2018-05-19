@@ -179,7 +179,7 @@ header p {
 ==============================*/
 #works-section {
 	padding: 120px 0;
-	background-color: #f6f6f6;
+	background-color: #f0ffff;
 }
 .categories {
 	padding-bottom: 30px;
@@ -305,6 +305,7 @@ ol.type li a:hover {
 /* Team Section */
 #team-section {
 	padding: 100px 0;
+	background-color: #f7ffff;
 }
 .section-title.center {
 	padding: 30px 0;
